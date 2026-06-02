@@ -3,55 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 01</title>
+    <title>Task 02 - Stopwatch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Fixed Navigation -->
-    <nav id="navbar">
-        <div class="logo">MySite</div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
 
-    <section class="container">
-
-        <div class="left">
-            <div class="task-box">
-                <h1>TASK 01</h1>
-            </div>
-
-            <div class="content-left">
-                <span class="dot"></span>
-                <h2>RESPONSIVE</h2>
-
-                <span class="dot"></span>
-                <h2>LANDING PAGE</h2>
-
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
+        <div class="task-box">
+            <h1>TASK 02</h1>
         </div>
 
-        <div class="right">
+        <h2>STOPWATCH WEB APPLICATION</h2>
+
+        <div class="stopwatch">
+            <div id="display">00:00:00</div>
+
+            <div class="buttons">
+                <button onclick="startStop()">Start</button>
+                <button onclick="pauseStop()">Pause</button>
+                <button onclick="resetStop()">Reset</button>
+                <button onclick="recordLap()">Lap</button>
+            </div>
+
+            <ul id="laps"></ul>
+        </div>
+
+        <div class="description">
             <p>
-                Create an interactive navigation menu that changes color
-                or style when scrolled or when hovering over a menu item.
+                Create an interactive and user-friendly stopwatch web application.
             </p>
 
             <p>
-                The navigation menu should have a fixed position and be
-                visible on all pages.
+                Implement functions for starting, pausing, resetting the stopwatch,
+                and tracking lap times.
             </p>
         </div>
 
-    </section>
+    </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>

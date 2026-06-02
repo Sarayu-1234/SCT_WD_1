@@ -6,129 +6,87 @@
 }
 
 body{
-    background:#16162b;
+    background:#1b1b35;
     color:white;
-}
-
-/* Navbar */
-#navbar{
-    position:fixed;
-    top:0;
-    width:100%;
+    min-height:100vh;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
-    padding:20px 50px;
-    background:transparent;
-    transition:0.4s;
-    z-index:1000;
 }
 
-#navbar.scrolled{
-    background:#00d4c0;
+.container{
+    width:90%;
+    max-width:1000px;
+    text-align:center;
 }
 
-.logo{
-    font-size:24px;
+.task-box{
+    width:350px;
+    margin:20px auto;
+    border:2px solid red;
+    padding:15px;
+}
+
+.task-box h1{
+    font-size:50px;
+}
+
+h2{
+    margin:30px 0;
+    font-size:45px;
+}
+
+.stopwatch{
+    margin-top:20px;
+}
+
+#display{
+    font-size:60px;
     font-weight:bold;
+    margin-bottom:20px;
 }
 
-#navbar ul{
-    display:flex;
-    list-style:none;
-}
-
-#navbar ul li{
-    margin-left:30px;
-}
-
-#navbar ul li a{
-    color:white;
-    text-decoration:none;
+.buttons button{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
     font-size:18px;
     transition:0.3s;
 }
 
-#navbar ul li a:hover{
-    color:#00d4c0;
+.buttons button:hover{
+    transform:scale(1.05);
 }
 
-/* Main Layout */
-.container{
-    min-height:100vh;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:120px 100px;
+#laps{
+    list-style:none;
+    margin-top:20px;
 }
 
-.left{
-    width:45%;
+#laps li{
+    padding:8px;
+    font-size:20px;
 }
 
-.task-box{
-    border:2px solid red;
-    width:400px;
-    text-align:center;
-    padding:20px;
-    margin-bottom:100px;
+.description{
+    margin-top:40px;
+    font-size:22px;
+    line-height:1.5;
 }
 
-.task-box h1{
-    font-size:60px;
-    font-weight:bold;
-}
-
-.content-left h2{
-    font-size:60px;
-    font-weight:300;
-    margin:10px 0;
-}
-
-.dot{
-    display:block;
-    width:8px;
-    height:8px;
-    background:#ff6b6b;
-    margin:25px 0;
-}
-
-.right{
-    width:40%;
-}
-
-.right p{
-    font-size:30px;
-    line-height:1.4;
-    margin-bottom:50px;
-}
-
-/* Responsive */
 @media(max-width:768px){
 
-    .container{
-        flex-direction:column;
-        padding:120px 30px;
+    h2{
+        font-size:30px;
     }
 
-    .left,
-    .right{
-        width:100%;
-    }
-
-    .task-box{
-        width:100%;
-    }
-
-    .content-left h2{
+    #display{
         font-size:40px;
     }
 
-    .right p{
-        font-size:22px;
-    }
-
-    #navbar{
-        padding:15px 20px;
+    .buttons button{
+        width:120px;
     }
 }
